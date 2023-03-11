@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home">
+        <!-- <div class="logo">
+            <img src="./image/sagar-logo-1.png" alt="">
+            <p>SIRT BHOPAL</p>
+        </div> -->
+            
+        <h1 id="user-name">Hello User!</h1>   <!-- we need for backend -->
+
+        <p>Enter your name to continue your quiz</p>
+
+        <div class="input-name">
+            <input type="text" id="placeholder" placeholder="ENTER YOUR NAME ...">
+            <button>ENTER</button>
+        </div>
+
+        <p id="p2">you will have 10 seconds to answer each question </p>
+
+        <div class="line"></div>
+
+        <h1>Select category </h1>
+
+        <div class="category">
+            <div class="left">
+                <button onclick="pipes() ;  ">pipes and Cisterns</button>
+                <button onclick="probability()" id="left-btn">Probability</button>
+            </div>
+            <div class="left">
+                <button onclick="ages()" id="btn">Problem on ages</button>
+                <button onclick="profit()" id="btn2">Profit and loss</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+    <div class="quiz-page">
+
+        <section class="main">
+
+            <div class="container">
+                <div class="col">
+                    <h3 id="questionBox">
+                        1) Lorem ipsum dolor sit amet, consectetur adipisicing elit Debitis?
+                    </h3>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="first" value="a" required>
+                    <label for="first">Testing 1</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="second" value="b" required>
+                    <label for="second">Testing 2</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="third" value="c" required>
+                    <label for="third">Testing 3</label>
+                </div>
+                <div class="col box">
+                    <input name="option" type="radio" id="fourth" value="d" required>
+                    <label for="fourth">Testing 4</label>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+                <button id="gotohome">Go To Home</button>
+                <button id="restartquiz">Restart Quiz</button>
+        </section>
+
+    </div>
+
+
+
+    <div class="quiz-result">
+            <div class="main">
+                <h1>Quiz Result</h1>
+                <p><span>User</span>your result is</p>
+                <p>Total Time Taken : <span></span>seconds</p>
+                <p>Total question : <span></span></p>
+                <p>Attempt : <span></span></p>
+                <p>Correct : <span></span></p>
+                <p>Wrong : <span></span></p>
+                <p>Percentage : <span></span>%</p>
+    
+                <div class="rbtn">
+                    <button>Start Again</button>
+                <button>Go To Home</button>
+                </div>
+            </div>
+    </div>
+
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
